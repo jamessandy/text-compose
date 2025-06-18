@@ -1,0 +1,6 @@
+{
+  "name": "TextCompose",
+  "description": "Compose your music by creating how each part sounds using text",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

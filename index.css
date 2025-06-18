@@ -1,0 +1,26 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Google Sans', sans-serif, system-ui; /* Added Google Sans as primary */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  overflow: hidden; /* Prevent body scroll, app handles its own scroll */
+  background-color: #1C1C1E; /* Match app background */
+}
+/* Class for when vertical slider is dragging */
+body.dragging {
+  cursor: ns-resize; /* North-South resize cursor */
+}
+/* Class for when horizontal slider is dragging */
+body.dragging-horizontal {
+    cursor: ew-resize; /* East-West resize cursor */
+}
+
+/* Prevent text selection during drag on all elements */
+body.dragging *, body.dragging-horizontal * {
+  user-select: none;
+  /* pointer-events: none; /* This can be too aggressive, only apply if necessary for specific elements */
+}
